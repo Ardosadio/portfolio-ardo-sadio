@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oumar Diallo - Portfolio</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="accueil" data-aos="fade-up">
+      <div class="container" style="text-align: center">
+        <img
+          src="images/profile.jpg"
+          alt="Photo de profil"
+          style="
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+          "
+        />
+        <h1 style="font-size: 3rem; color: var(--primary-color)">
+          Oumar Ardo Sadio Diallo
+        </h1>
+        <p style="font-size: 1.5rem">Développeur Front-end/back-end</p>
+        <div class="social-links">
+          <a href="https://linkedin.com/in/oumar-ardo-diallo" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="https://github.com/votreprofil" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" data-aos="fade-up">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--primary-color)">
+          À propos
+        </h2>
+        <p><strong>Nom :</strong> Oumar Ardo Sadio Diallo</p>
+        <p><strong>Profession :</strong> Développeur Front-end/back-end</p>
+        <p><strong>Localisation :</strong> Dakar, Sénégal</p>
+        <p>
+          Passionné par la technologie, je combine expertise en développement
+          web, administration réseau et support technique pour offrir des
+          solutions innovantes et efficaces.
+        </p>
+        <p>
+          <strong>Contact :</strong> +221 77 506 20 00 |
+          <a href="mailto:omzipro@gmail.com">omzipro@gmail.com</a>
+        </p>
+        <p>
+          <strong>LinkedIn :</strong>
+          <a
+            href="https://www.linkedin.com/in/oumar-ardo-diallo-9a3035263/"
+            target="_blank"
+            >Mon Profil LinkedIn</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <section id="projets" data-aos="fade-up">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--primary-color)">
+          Mes Projets
+        </h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Site web client</h3>
+
+            <p>HTML/CSS, JavaScript, Node.js</p>
+            <a
+              href="https://diamondbusinessplus.com/"
+              target="_blank"
+              class="project-link"
+              >Voir le projet</a
+            >
+          </div>
+          <div class="project-card">
+            <h3>Application de Gestion</h3>
+            <p>React, Express, MongoDB</p>
+            <a href="#" class="project-link">Voir le projet</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" data-aos="fade-up">
+      <div class="container">
+        <h2 style="text-align: center; color: var(--primary-color)">
+          Derniers Articles
+        </h2>
+        <div id="blog-posts">
+          <article class="blog-post">
+            <h3>Comment les outils d'IA révolutionnent le développement</h3>
+            <p>
+              Les outils d'intelligence artificielle (IA) transforment la
+              manière dont les développeurs travaillent. Ils permettent
+              d'automatiser des tâches répétitives, d'améliorer la qualité du
+              code et de gagner un temps précieux.
+            </p>
+            <p>
+              Par exemple, des outils comme GitHub Copilot peuvent suggérer des
+              lignes de code ou des fonctions complètes, tandis que des
+              plateformes comme ChatGPT aident à résoudre des problèmes
+              complexes ou à générer des idées.
+            </p>
+            <p>
+              En outre, l'IA est utilisée pour tester et déboguer les
+              applications, détecter les vulnérabilités de sécurité et optimiser
+              les performances. Ces outils permettent aux développeurs de se
+              concentrer sur des tâches plus créatives et stratégiques,
+              augmentant ainsi leur productivité et leur efficacité.
+            </p>
+            <a href="#" target="_blank">Lire plus →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" data-aos="fade-up">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <p>📧 omzipro@gmail.com</p>
+            <p>📞 +221 77 506 20 00</p>
+          </div>
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/your-form-id"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Votre nom" required />
+            <input type="email" name="_replyto" placeholder="Email" required />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <input type="checkbox" name="_bot" style="display: none" />
+            <button type="submit">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <button id="theme-toggle">🌓</button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
